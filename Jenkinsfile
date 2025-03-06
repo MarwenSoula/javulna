@@ -7,5 +7,7 @@ stages { // Defines the different stages of the pipeline
         git 'https://github.com/MarwenSoula/javulna.git' // Retrieves the source code from the specified GitHub repository
       }
     }
+  }
+
 
 }
