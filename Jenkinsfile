@@ -16,6 +16,11 @@ stages { // Defines the different stages of the pipeline
         sh 'mvn test' // Runs the Maven command to execute the unit tests
       }   
     }
+    stage ('Build') { // Defines the 'Build' stage
+      steps { // Specifies the steps to be executed within this stage
+        sh 'mvn install' // Runs the Maven command to clean and build the project
+      }   
+    }
   }
 
 
